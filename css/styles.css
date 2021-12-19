@@ -2,12 +2,13 @@
   --active-colore: #2196f3;
   --titel-colore: #212121;
   --text-colore: #757575;
+  --white-colore: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--titel-colore);
-  background-color: #ffffff;
+  background-color: var(--white-colore);
 }
 
 .link {
@@ -25,7 +26,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--active-colore);
 }
 
 .logo-dark {
@@ -33,7 +34,7 @@ body {
 }
 
 .logo-light {
-  color: #ffffff;
+  color: var(--white-colore);
 }
 
 /* ------header section------ */
@@ -96,9 +97,10 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-colore);
 }
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -107,9 +109,9 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
-  color: #ffffff;
+  color: var(--white-colore);
 
-  background: #2196f3;
+  background: var(--active-colore);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -140,7 +142,6 @@ body {
   text-transform: uppercase;
 }
 .advantage-item-text {
-  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -182,7 +183,6 @@ body {
   /* color: var(--titel-colore); */
 }
 .team-item-text {
-  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -194,16 +194,16 @@ body {
 .footer {
   background: #2f303a;
 }
-/* .address */
+.address {
+  font-style: normal;
+}
 /* .address-list  */
 /* .address-item  */
 .address-link {
-  /* font-weight: 400; */
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-colore);
 }
 .address-link:hover,
 .address-link:focus {
@@ -212,8 +212,6 @@ body {
 
 .address-mail,
 .address-tell {
-  font-style: normal;
-  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -245,6 +243,7 @@ body {
 }
 
 .filters-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -255,9 +254,10 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
 }
-.filters-btn:hover {
-  color: #ffffff;
-  background: #2196f3;
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--white-colore);
+  background: var(--active-colore);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
